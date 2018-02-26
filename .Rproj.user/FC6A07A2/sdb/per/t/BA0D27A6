@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1519242101658.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "BA0D27A6",
+    "lastKnownWriteTime" : 8346949239590289408,
+    "last_content_update" : 1519242101658,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "8E8D721E",
+        "caption" : "ethereum_classic_price",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=ethereum_classic_price&cache_key=8E8D721E",
+        "displayedObservations" : 577,
+        "environment" : "",
+        "object" : "ethereum_classic_price",
+        "preview" : 0,
+        "totalObservations" : 577,
+        "variables" : 7
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

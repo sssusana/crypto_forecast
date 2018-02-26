@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1519599366831.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "1601D94C",
+    "lastKnownWriteTime" : 6,
+    "last_content_update" : 1519599366831,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "7A98DF9F",
+        "caption" : "CloseO",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=CloseO&cache_key=7A98DF9F",
+        "displayedObservations" : 929,
+        "environment" : "",
+        "object" : "CloseO",
+        "preview" : 0,
+        "totalObservations" : 929,
+        "variables" : 1
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1519242044969.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1553453880",
+    "id" : "25CEFFAA",
+    "lastKnownWriteTime" : 1519606657,
+    "last_content_update" : 1519606658003,
+    "path" : "~/Documents/GitHub/crypto_forecast/crypto_forecast.R",
+    "project_path" : "crypto_forecast.R",
+    "properties" : {
+        "cursorPosition" : "1,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

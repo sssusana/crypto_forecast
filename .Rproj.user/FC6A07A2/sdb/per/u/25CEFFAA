@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#https://www.datascience.com/blog/introduction-to-forecasting-with-arima-in-r-learn-data-science-tutorials\n\n#Libraries\nlibrary('ggplot2')\nlibrary('forecast')\nlibrary('tseries')\ninstall.packages('tsclean')\n#Other dataset\ndaily_data = read.csv('day.csv', header=TRUE, stringsAsFactors=FALSE)\nhead(daily_data)\n\n#Load dataset\ncrypto_data <- read_csv(\"~/Documents/GitHub/crypto_forecast/ethereum_classic_price.csv\")\n\ndaily_data$Date = as.Date(daily_data$dteday)\n\nggplot(daily_data, aes(Date, cnt)) + geom_line() + scale_x_date('month')  + ylab(\"Daily Bike Checkouts\") +\n  xlab(\"\")\n\n\ncount_ts = ts(daily_data[, c('cnt')])\ndaily_data$clean_cnt = tsclean(count_ts)\n\ndaily_data$cnt_ma = ma(daily_data$clean_cnt, order=7) # using the clean count with no outliers\ndaily_data$cnt_ma30 = ma(daily_data$clean_cnt, order=30)\n\n\nggplot() +\n  geom_line(data = daily_data, aes(x = Date, y = clean_cnt, colour = \"Counts\")) +\n  geom_line(data = daily_data, aes(x = Date, y = cnt_ma,   colour = \"Weekly Moving Average\"))  +\n  geom_line(data = daily_data, aes(x = Date, y = cnt_ma30, colour = \"Monthly Moving Average\"))  +\n  ylab('Bicycle Count')\n\n\n#crypto data\nhead(crypto_data)\n\n#Converting Date from char - Jan 29, 2018 - to date\ntoday <- Sys.Date()\nformat(today, format= \"%B %d %Y\")\nDate <- as.Date(crypto_data$Date, \"%b %d %Y\")\n\n\n?sub\n\nDate\ncrypto_data$Date = as.Date(crypto_data$Date)\n",
+    "created" : 1519242044969.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "3823917720",
+    "id" : "25CEFFAA",
+    "lastKnownWriteTime" : 7226435094589303907,
+    "last_content_update" : 1519244513808,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
